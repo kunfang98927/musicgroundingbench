@@ -1,0 +1,6 @@
+# Core symbolic pipeline (2B steps 01-15, 3N step 3n_01)
+pretty_midi
+
+# Plotting / stats (2B step 16, 3N steps 3n_04/3n_09)
+numpy
+matplotlib

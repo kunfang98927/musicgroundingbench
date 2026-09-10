@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local environments (recreate from requirements.txt / environment.yml instead)
+.venv/
+venv/
+env/
+
+# Generated datasets (large; released separately, not committed to git)
+two_bar_dataset/
+piano-melody-3notes/
+*.h5
+
+.DS_Store
