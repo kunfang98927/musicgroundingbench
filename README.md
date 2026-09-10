@@ -62,5 +62,5 @@ mgbench_2b/
 ## Citation
 
 ```
-(paper citation - to be added once ICASSP 2027 decisions are final)
+(paper citation - to be added)
 ```
