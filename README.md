@@ -1,5 +1,11 @@
 # MusicGroundingBench
 
+> ### ▶ Demo page: **<https://kunfang98927.github.io/musicgroundingbench/>**
+>
+> Listen to test clips from both subsets and compare every reported model's
+> actual prediction against the ground truth, one item per concept (the same
+> models as Table 1, grounding, and Table 2, understanding, in the paper).
+
 Code to reproduce **MusicGroundingBench (MGBench)**: a benchmark for
 note-level temporal grounding and music understanding on short piano clips.
 MGBench has two independent subsets, each in its own self-contained folder -
