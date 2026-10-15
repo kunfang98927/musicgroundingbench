@@ -1,5 +1,13 @@
 # MusicGroundingBench
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23377894.svg)](https://doi.org/10.5281/zenodo.23377894)
+
+> ### ▶ Dataset (Zenodo): **<https://doi.org/10.5281/zenodo.23377894>**
+>
+> Audio, MIDI, per-clip metadata, and all question–answer files of MGBench-3N and
+> MGBench-2B (16,844 clips, 152,686 QA pairs; CC BY 4.0). The record's README.md
+> describes the file layout and the QA format.
+>
 > ### ▶ Demo page: **<https://kunfang98927.github.io/musicgroundingbench/>**
 >
 > Listen to test clips from both subsets and compare every reported model's
