@@ -140,9 +140,9 @@ step-by-step reproduction guide will be added.
 
 ## License
 
-The dataset is released under the
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
-license.
+* **Code** in this repository: [MIT License](LICENSE).
+* **Dataset** (on Zenodo, including the audio clips of the demo page):
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 ## Citation
 
