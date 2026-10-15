@@ -10,71 +10,150 @@
 >
 > ### ▶ Demo page: **<https://kunfang98927.github.io/musicgroundingbench/>**
 >
-> Listen to test clips from both subsets and compare every reported model's
-> actual prediction against the ground truth, one item per concept (the same
-> models as Table 1, grounding, and Table 2, understanding, in the paper).
+> Listen to test clips from both subsets and compare the evaluated models'
+> predictions with the ground truth, one item per concept.
 
-Code to reproduce **MusicGroundingBench (MGBench)**: a benchmark for
-note-level temporal grounding and music understanding on short piano clips.
-MGBench has two independent subsets, each in its own self-contained folder -
-pick whichever you need, or both.
+**MusicGroundingBench (MGBench)** is a controlled benchmark for **note-level temporal
+grounding** and **music understanding** in audio-language models. Its clips are
+algorithmically generated monophonic piano music with exact symbolic alignment: every clip
+comes with its MIDI and note list, and every reference answer is computed from the notes and
+independently re-verified. Grounding questions ask *when* the notes that satisfy a musical
+query occur; understanding questions ask *what* a clip contains.
 
-Both subsets are procedurally generated from a fixed seed and validated
-against transparent rules - there's no model or manual curation in the loop.
-Audio synthesis (PianoTeq 9 Stage) is proprietary and out of scope for this
-repo: everything here operates on MIDI and JSON, and both pipelines below are
-verified **byte-for-byte identical** to the released dataset without ever
-touching rendered audio.
+Paper: *Note-Level Temporal Grounding of Musical Concepts in Large Audio-Language Models*
+(Kun Fang, Ziyu Wang, Ichiro Fujinaga) — [arXiv:2608.29480](https://arxiv.org/abs/2608.29480).
 
-## MGBench-3N
+## Overview
 
-Clips with one, two, or three notes, queried with note-level grounding
-questions ("locate the loudest note", "the pair separated by 5 semitones", ...).
+| | MGBench-3N | MGBench-2B |
+|---|---|---|
+| Material | 1–3 sequential notes, all 88 piano keys | two-bar monophonic excerpts |
+| Clips (train / val / test) | 6,000 (4,200 / 900 / 900) | 10,844 (8,646 / 1,086 / 1,112) |
+| Grounding QA | 69,145 | 39,974 |
+| Understanding QA | – | 43,567 |
+| Evaluation set `test` | 900 | 1,035 grounding, 1,078 understanding |
+
+* **MGBench-3N** isolates note-level localization. Query categories: ABS (absolute pitch),
+  REL (pitch or loudness rank), ORD (position of a note or of the first/last notes), PAT (pitch
+  difference, contour, closest/farthest note pair, widening/narrowing intervals).
+* **MGBench-2B** adds rhythmic, tonal, intervallic, and harmonic structure, with grounding and
+  understanding questions on the same clips over seven concepts: rhythm, tonality, interval,
+  bar comparison, harmony, repetition, and harmonic pattern.
+
+Audio was rendered from the MIDI files with Pianoteq 9 Stage (WAV, 44.1 kHz, 16-bit, stereo).
+Splits are clip-disjoint.
+
+## Download
+
+Everything is on Zenodo: <https://doi.org/10.5281/zenodo.23377894> (about 18 GB in total; the
+audio of each split is spread over several standalone zip archives). Unzip all archives into
+one folder:
+
+```
+MGBench-2B/
+  qa/grounding/{train,val,test,test-full}.json
+  qa/understanding/{train,val,test,test-full}.json
+  {train,val,test}/wav/<sample_id>.wav
+  {train,val,test}/midi/<sample_id>.mid
+  {train,val,test}/meta/<sample_id>.json
+MGBench-3N/
+  qa/{train,val,test,test-full}.json
+  {train,val,test}/wav/<sample_id>.wav
+  {train,val,test}/midi/<sample_id>.mid
+  {train,val,test}/meta/<sample_id>.json
+```
+
+For evaluation only, the QA archives and the test audio (about 2.1 GB) are enough:
 
 ```bash
-pip install -r requirements.txt
-cd mgbench_3n && ./run_pipeline.sh piano-melody-3notes
+base=https://zenodo.org/records/23377894/files
+for f in MGBench-2B_qa.zip MGBench-3N_qa.zip \
+         MGBench-2B_audio_test_part0{1..5}-of-05.zip \
+         MGBench-3N_audio_test_part0{1..3}-of-03.zip; do
+  wget -O "$f" "$base/$f?download=1"
+done
+for f in MGBench-*.zip; do unzip -q "$f"; done
 ```
 
-Full details: **[mgbench_3n/docs/REPRODUCING.md](mgbench_3n/docs/REPRODUCING.md)**.
+`SHA256SUMS` (archives) and `MANIFEST.sha256` (every unpacked file) on the record let you verify
+the download.
 
-## MGBench-2B
+## QA format
 
-Two-bar clips with a richer control-attribute spec (meter, tempo, mode,
-structure, ...), queried with both **grounding QA** (find a note-span, e.g.
-*the two notes that repeat exactly*) and **understanding QA** (free-text
-answer + evidence span, e.g. *what's the time signature?*).
+Each QA file is a JSON list. The `audio_path` of an item is relative to its subset folder.
+Shortened examples from the `test` sets:
 
-```bash
-pip install -r requirements.txt
-cd mgbench_2b && ./run_pipeline.sh two_bar_dataset
+```jsonc
+// MGBench-3N grounding
+{"sample_id": "test_000676_n1_p42", "audio_path": "test/wav/test_000676_n1_p42.wav",
+ "question": "Locate the last note.",
+ "answer": "From 0.30 second to 1.77 second.",
+ "answer_spans_sec": [[0.295455, 1.768182]]}
+
+// MGBench-2B grounding
+{"sample_id": "test_000209", "audio_path": "test/wav/test_000209.wav", "concept": "interval",
+ "question": "Locate the note(s) with the highest pitch.",
+ "answer_text": "From 1.08 seconds to 1.48 seconds; From 4.43 seconds to 4.85 seconds.",
+ "answer_spans_sec": [[1.081818, 1.484091], [4.434091, 4.85]]}
+
+// MGBench-2B understanding
+{"sample_id": "test_000003", "audio_path": "test/wav/test_000003.wav", "concept": "interval",
+ "question": "How many semitones is the largest melodic leap in this clip?",
+ "answer_text": "8", "gold_answer": 8, "gold_answer_type": "integer",
+ "evidence_note_indices": [1, 2]}
 ```
 
-That alone reproduces the pre-audio-filter dataset; two documented follow-up
-steps then land on the released dataset exactly. Full details, including the
-filter logic behind every quality-control step: **[mgbench_2b/docs/REPRODUCING.md](mgbench_2b/docs/REPRODUCING.md)**.
+Every item also carries the clip's notes (`notes`: MIDI pitch, velocity, start and end in
+seconds), paraphrases of the question, and the question type. An empty `answer_spans_sec` means
+that no note satisfies the query. The README.md on the Zenodo record lists every field and the
+per-clip metadata.
 
-## Layout
+## Evaluation
 
-Each subset is fully self-contained - its own `scripts/`, `reference/`,
-`docs/`, and pipeline script, sharing only this README and `requirements.txt`:
+* **`test`** is the evaluation set: one fixed question per test clip (3N: 900, 2B grounding:
+  1,035, 2B understanding: 1,078). Report results on it.
+* **`test-full`** contains every question on the test clips (3N: 10,478, 2B grounding: 3,381,
+  2B understanding: 4,928); `test` is a subset of it.
 
-```
-mgbench_3n/
-  run_pipeline.sh
-  scripts/      01_generate_midi.py ... 09_build_generalize_testset.py
-  reference/    query_generalize_ood.json (hand-authored, not derivable)
-  docs/         REPRODUCING.md
-mgbench_2b/
-  run_pipeline.sh
-  scripts/      01_generate_midi.py ... 16_plot_final_stats.py
-  src/          generation + validation + shared QA-derivation logic
-  reference/    official_overlong_excluded_ids.txt
-  docs/         REPRODUCING.md
-```
+Protocol (Section 4 of the paper):
+
+* **Grounding.** Predicted and reference answers are sets of time intervals. We report the
+  instruction-following rate (IFR), MergedIoU (IoU of the regions covered after merging
+  overlapping spans), and span-level precision, recall, and F1 under greedy one-to-one
+  matching at IoU ≥ 0.5 and ≥ 0.7, together with the onset/offset mean absolute error (ms) of
+  matched spans. For free-form model outputs, spans are extracted with Qwen2.5-7B-Instruct.
+* **Understanding.** Qwen2.5-7B-Instruct judges each answer for instruction following and
+  semantic correctness. We report IFR and accuracy over all test questions, overall and per
+  concept.
+
+Reference evaluation scripts will be added to this repository.
+
+## Repository contents
+
+* `docs/` — the demo page (served with GitHub Pages).
+* `mgbench_3n/`, `mgbench_2b/` — generation of the clips' MIDI.
+* `mgbench_v2/` — construction and validation of the released question–answer pairs: the
+  rule-based answer oracles, question templates, and validation gates.
+
+Audio rendering (Pianoteq 9 Stage) is commercial software and not part of this repository. A
+step-by-step reproduction guide will be added.
+
+## License
+
+The dataset is released under the
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+license.
 
 ## Citation
 
-```
-(paper citation - to be added)
+If you use MusicGroundingBench, please cite the paper:
+
+```bibtex
+@article{fang2026notelevel,
+  title   = {Note-Level Temporal Grounding of Musical Concepts in Large Audio-Language Models},
+  author  = {Fang, Kun and Wang, Ziyu and Fujinaga, Ichiro},
+  journal = {arXiv preprint arXiv:2608.29480},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2608.29480}
+}
 ```
