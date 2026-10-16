@@ -96,25 +96,32 @@ section{padding-block:10px 18px;border-top:1px solid var(--line)}
 
 /* timeline + piano roll */
 .tl{position:relative;display:grid;grid-template-columns:var(--labw) minmax(0,1fr);margin-top:6px;--labw:18.5rem}
-.tl .grp{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin-top:6px;padding-bottom:2px;font:500 .68rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
-.tl .grp::after{content:"";flex:1;border-top:1px solid var(--line-2)}
+.tl .grp{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin-top:24px;padding-bottom:4px;font:600 .9rem/1.2 var(--font);letter-spacing:.01em;color:var(--accent)}
 .tl .grp.sup{color:var(--accent)}
-.answers .grp{display:flex;align-items:center;gap:10px;margin-top:5px;font:500 .68rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
-.answers .grp::after{content:"";flex:1;border-top:1px solid var(--line-2)}
+.tl .grp-d{grid-column:1/-1;font-size:.78rem;line-height:1.4;color:var(--ink-2);margin:4px 0 10px;max-width:46rem}
+.answers .grp{display:flex;align-items:center;gap:10px;margin-top:24px;padding-bottom:4px;font:600 .9rem/1.2 var(--font);letter-spacing:.01em;color:var(--accent)}
 .answers .grp.sup{color:var(--accent)}
+.answers .grp-d{font-size:.78rem;line-height:1.4;color:var(--ink-2);margin:4px 0 10px;max-width:46rem}
 .answers{display:grid;gap:5px;margin-top:8px}
 .ans{display:grid;grid-template-columns:20rem minmax(0,1fr);gap:12px;align-items:start;padding:6px 9px;border:1px solid var(--line-2);border-radius:8px}
 .ans.ref{background:var(--surface-2);border-color:transparent}
 .ans .who{font-size:.82rem;font-weight:500;display:flex;gap:8px;align-items:center;min-width:0}
+.ans .who.mem{padding-left:14px}
+.ans .who.has-d{flex-direction:column;align-items:flex-start;gap:2px}
+.ans .who.has-d .row1{display:flex;align-items:center;gap:8px;min-width:0}
 .ans .who i{width:9px;height:9px;border-radius:3px;flex:none}
 .ans .who b{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .ans .who .chip{flex:none}
-.info{text-decoration:underline dotted var(--ink-3) 1px;text-underline-offset:3px;cursor:help}
+.ans .who .d{font-size:.72rem;font-weight:400;color:var(--ink-3);line-height:1.25;white-space:normal}
 .ans .txt{font-size:.9rem;overflow-wrap:anywhere}
 .tl .lab{display:flex;align-items:center;gap:7px;padding-right:10px;font-size:.78rem;min-height:22px;min-width:0}
+.tl .lab.mem{padding-left:14px}
+.tl .lab.has-d{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding-block:3px}
+.tl .lab.has-d .row1{display:flex;align-items:center;gap:7px;width:100%;min-width:0}
 .tl .lab i{width:8px;height:8px;border-radius:3px;flex:none}
 .tl .lab b{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .tl .lab .chip{flex:none}
+.tl .lab .d{font-size:.68rem;color:var(--ink-3);line-height:1.2;padding-left:15px}
 .tl .trk{position:relative;min-height:22px;border-bottom:1px solid var(--line-2)}
 .kbd{position:relative;padding:0!important;display:block!important}
 .kbd .k{position:absolute;right:0;display:flex;align-items:center;justify-content:flex-end;gap:6px;width:100%}
@@ -166,14 +173,15 @@ section{padding-block:10px 18px;border-top:1px solid var(--line)}
 
 <section id="explore"><div class="wrap">
   <div class="tabs" role="tablist" id="taskTabs" aria-label="Task">
-    <button class="tab" role="tab" data-task="g3">MGBench-3N &middot; Grounding</button>
-    <button class="tab" role="tab" data-task="g2">MGBench-2B &middot; Grounding</button>
-    <button class="tab" role="tab" data-task="u2">MGBench-2B &middot; Understanding</button>
+    <button class="tab" role="tab" data-task="g3">MusicGroundingBench-3N &middot; Grounding</button>
+    <button class="tab" role="tab" data-task="g2">MusicGroundingBench-2B &middot; Grounding</button>
+    <button class="tab" role="tab" data-task="u2">MusicGroundingBench-2B &middot; Understanding</button>
   </div>
   <div class="picker" role="tablist" id="picker" aria-label="Concept"></div>
   <div class="card" id="detail"></div>
 </div></section>
 </main>
+
 
 <script src="data.js"></script>
 <script>
@@ -205,10 +213,22 @@ var PALETTE = [
   ["#e87ba4","#d55181"], ["#008300","#008300"], ["#4a3aa7","#9085e9"], ["#e34948","#e66767"]
 ];
 var GRP_LABEL = {
-  sup:"Supervised (ours)", zs:"Zero-shot · no MGBench training", nonllm:"Non-LLM baseline (closed vocabulary)",
-  oracle:"GT-Note oracle · no audio, no training", ctrl:"Audio-dependence / symbolic controls"
+  sup:"Fine-tuned models", zs:"Zero-shot large audio-language models", nonllm:"Non-LLM Models",
+  oracle:"GT-Note Baseline", ctrl:"Audio-Dependence Controls"
 };
 var GRP_ORDER = ["oracle","nonllm","zs","sup","ctrl"];
+function grpDesc(grp, task){
+  switch(grp){
+    case "oracle": return "Qwen2.5-7B-Instruct, a text-only LLM, used zero-shot. No audio as input: its input is the question text and the clip’s ground-truth MIDI notes written as text (pitch, onset time, and offset time of each note), and it answers from this text alone.";
+    case "nonllm": return "MERT audio features with a trainable classifier head; answers come from a closed set of query templates, not free-text generation.";
+    case "zs": return "";
+    case "sup": return task === "u2"
+      ? "LLaMA-3-8B and Qwen3.5-9B-Base backbones with frozen MERT audio features, fine-tuned on MusicGroundingBench-2B; each row lists its training set."
+      : "LLaMA-3-8B and Qwen3.5-9B-Base backbones with frozen MERT audio features, fine-tuned on the MusicGroundingBench-" + (task === "g3" ? "3N" : "2B") + " grounding training set.";
+    case "ctrl": return "Checks whether the answers depend on the audio.";
+    default: return "";
+  }
+}
 function isDark(){ var t=document.documentElement.getAttribute("data-theme"); if(t) return t==="dark"; return matchMedia("(prefers-color-scheme: dark)").matches; }
 function modelColor(task, key){ var i = D.model_order[task].indexOf(key); var pair = PALETTE[i % PALETTE.length]; return isDark()?pair[1]:pair[0]; }
 function modelName(key){ return (D.model_meta[key] && D.model_meta[key].name) || pretty(key); }
@@ -283,8 +303,8 @@ function spansHTML(spans, end, cls, color){
 }
 function chipRow(items){ return items.map(function(c){ return c.html || '<span class="chip '+(c.k||"")+'">'+esc(c.t)+'</span>'; }).join(""); }
 
-function buildTimeline(container, item, task, only, compact){
-  var order = task ? (only || D.model_order[task]) : [];
+function buildTimeline(container, item, task){
+  var order = D.model_order[task];
   var preds = order.map(function(k){ return {k:k, rec:item.p[k]}; }).filter(function(p){ return p.rec; });
   var end = axisEnd(item, [item.gt].concat(preds.map(function(p){return p.rec.spans||[];})));
   var rp = rollParts(item, end, item.gt);
@@ -294,9 +314,14 @@ function buildTimeline(container, item, task, only, compact){
   var lastG = null;
   preds.forEach(function(p){
     var grp = modelGroup(p.k), color = modelColor(task, p.k), sc = scoreOf(p.rec.spans, item.gt);
-    if(grp !== lastG){ html += '<div class="grp'+(grp==="sup"?" sup":"")+'">'+GRP_LABEL[grp]+'</div>'; lastG = grp; }
-    var tip = compact ? esc(modelName(p.k)) : esc(modelName(p.k)+" — "+modelDesc(p.k));
-    html += '<div class="lab"><i style="background:'+color+'"></i><b class="'+(compact?"":"info")+'" title="'+tip+'">'+esc(modelName(p.k))+'</b>'+(sc? '<span class="chip '+sc.k+'">'+esc(sc.t)+'</span>':'')+'</div>';
+    if(grp !== lastG){
+      var gd = grpDesc(grp, task);
+      html += '<div class="grp'+(grp==="sup"?" sup":"")+'">'+GRP_LABEL[grp]+'</div>'+(gd? '<div class="grp-d">'+esc(gd)+'</div>' : '');
+      lastG = grp;
+    }
+    var d = modelDesc(p.k);
+    var row1 = '<div class="row1"><i style="background:'+color+'"></i><b title="'+esc(modelName(p.k))+'">'+esc(modelName(p.k))+'</b>'+(sc? '<span class="chip '+sc.k+'">'+esc(sc.t)+'</span>':'')+'</div>';
+    html += '<div class="lab mem'+(d?" has-d":"")+'">'+row1+(d? '<div class="d">'+esc(d)+'</div>':'')+'</div>';
     html += '<div class="trk">'+((p.rec.spans||[]).length? spansHTML(p.rec.spans,end,"",color) : '<div class="empty">'+esc(p.rec.text||"(empty)")+'</div>')+'</div>';
   });
   html += '<div class="lab"></div><div class="axis">'+axisHTML(end)+'</div>';
@@ -312,16 +337,14 @@ var ICON_PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14
 function attachAudio(host, src, end){
   var a = new Audio(); a.preload = "metadata"; a.src = src; curAudio = a;
   host.innerHTML = '<div class="player"><button type="button" class="play" aria-label="Play the clip">'+ICON_PLAY+'</button>'
-    + '<div class="pbody"><div class="pt"><b>Listen to this clip</b><span data-time>0.00 / – s</span></div>'
-    + '<input type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position" data-seek>'
-    + '<div class="phint">Click the piano roll to jump to that moment.</div></div></div>';
+    + '<div class="pbody"><input type="range" min="0" max="1000" value="0" step="1" aria-label="Playback position" data-seek></div></div>';
   var btn = host.querySelector(".play"), seek = host.querySelector("[data-seek]"), tm = host.querySelector("[data-time]");
   var root = host.parentNode, ph = root.querySelector("[data-ph]"), roll = root.querySelector("[data-roll]");
   var dragging = false;
   function dur(){ return isFinite(a.duration) && a.duration>0 ? a.duration : end; }
   function paint(){
     var t = a.currentTime, d = dur();
-    tm.textContent = t.toFixed(2)+" / "+d.toFixed(2)+" s";
+    if(tm) tm.textContent = t.toFixed(2)+" / "+d.toFixed(2)+" s";
     if(!dragging) seek.value = Math.round(t/d*1000);
     if(ph){ ph.style.left = Math.min(100, t/end*100)+"%"; }
   }
@@ -353,8 +376,9 @@ function renderDetail(){
   if(S.task==="u2"){ renderUnderstanding(x, box, c); return; }
   box.innerHTML =
       '<div class="chips">'+chipRow([{html:domChip(c.dom)}])+'</div><div class="qtext">'+esc(x.q)+'</div>'
-    + '<div class="audio" id="audioHost"></div><div id="tlHost"></div>'
-    + '<div class="legend"><span><i style="background:var(--note-ev)"></i>evidence note</span><span><i style="background:var(--note)"></i>other note</span><span><i style="background:var(--ink)"></i>reference span</span></div>';
+    + '<div class="audio" id="audioHost"></div>'
+    + '<div class="legend"><span><i style="background:var(--note-ev)"></i>evidence note</span><span><i style="background:var(--note)"></i>other note</span><span><i style="background:var(--ink)"></i>reference span</span></div>'
+    + '<div id="tlHost"></div>';
   var end = buildTimeline($("#tlHost"), x, S.task);
   attachAudio($("#audioHost"), "audio/"+(S.task==="g3"?"3N":"2B")+"/"+x.id+".mp3", end);
 }
@@ -364,13 +388,18 @@ function renderUnderstanding(x, box, c){
   var order = D.model_order.u2, lastG = null;
   var ans = order.filter(function(k){ return x.p[k]; }).map(function(k){
     var grp = modelGroup(k), color = modelColor("u2", k), gh = "";
-    if(grp !== lastG){ gh = '<div class="grp'+(grp==="sup"?" sup":"")+'">'+GRP_LABEL[grp]+'</div>'; lastG = grp; }
-    var txt = x.p[k].text, tip = esc(modelName(k)+" — "+modelDesc(k));
+    if(grp !== lastG){
+      var gd = grpDesc(grp, "u2");
+      gh = '<div class="grp'+(grp==="sup"?" sup":"")+'">'+GRP_LABEL[grp]+'</div>'+(gd? '<div class="grp-d">'+esc(gd)+'</div>' : '');
+      lastG = grp;
+    }
+    var txt = x.p[k].text, d = modelDesc(k);
     var verdict = u2judge(x.ref, txt, x.gtype);
     var vchip = verdict===null ? "" : (verdict
       ? '<span class="chip good" title="text match vs. the reference &mdash; not the paper’s LLM judge">correct</span>'
       : '<span class="chip bad" title="text match vs. the reference &mdash; not the paper’s LLM judge">wrong</span>');
-    return gh+'<div class="ans"><div class="who"><i style="background:'+color+'"></i><b class="info" title="'+tip+'">'+esc(modelName(k))+'</b>'+vchip+'</div><div class="txt">'+(txt? esc(txt) : '<span class="tiny">(empty)</span>')+'</div></div>';
+    var row1 = '<div class="row1"><i style="background:'+color+'"></i><b title="'+esc(modelName(k))+'">'+esc(modelName(k))+'</b>'+vchip+'</div>';
+    return gh+'<div class="ans"><div class="who mem'+(d?" has-d":"")+'">'+row1+(d? '<div class="d">'+esc(d)+'</div>':'')+'</div><div class="txt">'+(txt? esc(txt) : '<span class="tiny">(empty)</span>')+'</div></div>';
   }).join("");
   box.innerHTML =
       '<div class="chips">'+chipRow([{html:domChip(c.dom)}])+'</div><div class="qtext">'+esc(x.q)+'</div>'
@@ -393,5 +422,6 @@ $("#picker").addEventListener("click", function(e){ var b=e.target.closest(".pil
 setTask("g3");
 })();
 </script>
+
 </body>
 </html>
