@@ -68,8 +68,9 @@ python -m evaluation.understanding --qa MGBench-2B/qa/understanding/test.json --
 (greedy decoding, float16) whether each answer follows the instruction and whether it matches
 the reference answer; paraphrases and musically equivalent answers count as correct. A judge
 output that is not valid JSON falls back to an exact string comparison with the reference.
-The judge takes about one second per question on a single GPU, and `--out` is resumed if the
-run is interrupted. Use `--model` to point to a local copy of the judge model.
+Judging the 1,078 understanding test questions takes about 30 minutes on one H100 GPU; `--out`
+is resumed if the run is interrupted. Re-running the judge on the stored predictions of one of the paper's
+models reproduced all 1,078 of its labels. Use `--model` to point to a local copy of the judge model.
 
 | Metric | Definition |
 |---|---|
