@@ -1,0 +1,1802 @@
+[
+ {
+  "id": "train_tr0001",
+  "split": "train",
+  "source": "train_007887",
+  "semitones": -2,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0002",
+  "split": "train",
+  "source": "train_003878",
+  "semitones": -1,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0003",
+  "split": "train",
+  "source": "train_008511",
+  "semitones": 1,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0004",
+  "split": "train",
+  "source": "train_000907",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0005",
+  "split": "train",
+  "source": "train_003435",
+  "semitones": 4,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0006",
+  "split": "train",
+  "source": "train_007451",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0007",
+  "split": "train",
+  "source": "train_002067",
+  "semitones": -2,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0008",
+  "split": "train",
+  "source": "train_003804",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0009",
+  "split": "train",
+  "source": "train_003810",
+  "semitones": -7,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0010",
+  "split": "train",
+  "source": "train_002894",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0011",
+  "split": "train",
+  "source": "train_007191",
+  "semitones": 6,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0012",
+  "split": "train",
+  "source": "train_003314",
+  "semitones": 2,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0013",
+  "split": "train",
+  "source": "train_000535",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0014",
+  "split": "train",
+  "source": "train_000634",
+  "semitones": -3,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0015",
+  "split": "train",
+  "source": "train_000461",
+  "semitones": -2,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0016",
+  "split": "train",
+  "source": "train_000494",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0017",
+  "split": "train",
+  "source": "train_004056",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0018",
+  "split": "train",
+  "source": "train_002622",
+  "semitones": -1,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0019",
+  "split": "train",
+  "source": "train_006053",
+  "semitones": -1,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0020",
+  "split": "train",
+  "source": "train_003706",
+  "semitones": -4,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0021",
+  "split": "train",
+  "source": "train_009181",
+  "semitones": 3,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0022",
+  "split": "train",
+  "source": "train_002059",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0023",
+  "split": "train",
+  "source": "train_001223",
+  "semitones": 3,
+  "meter": "2/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0024",
+  "split": "train",
+  "source": "train_009152",
+  "semitones": -1,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0025",
+  "split": "train",
+  "source": "train_003913",
+  "semitones": -4,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0026",
+  "split": "train",
+  "source": "train_003535",
+  "semitones": 6,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0027",
+  "split": "train",
+  "source": "train_009177",
+  "semitones": 2,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0028",
+  "split": "train",
+  "source": "train_004255",
+  "semitones": 7,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0029",
+  "split": "train",
+  "source": "train_002977",
+  "semitones": 7,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0030",
+  "split": "train",
+  "source": "train_009410",
+  "semitones": -3,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0031",
+  "split": "train",
+  "source": "train_009581",
+  "semitones": 6,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0032",
+  "split": "train",
+  "source": "train_004647",
+  "semitones": -4,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0033",
+  "split": "train",
+  "source": "train_008322",
+  "semitones": 5,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0034",
+  "split": "train",
+  "source": "train_008457",
+  "semitones": 3,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0035",
+  "split": "train",
+  "source": "train_003049",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0036",
+  "split": "train",
+  "source": "train_004774",
+  "semitones": 4,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0037",
+  "split": "train",
+  "source": "train_003010",
+  "semitones": -3,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0038",
+  "split": "train",
+  "source": "train_003854",
+  "semitones": 4,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0039",
+  "split": "train",
+  "source": "train_000920",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0040",
+  "split": "train",
+  "source": "train_003655",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0041",
+  "split": "train",
+  "source": "train_004949",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0042",
+  "split": "train",
+  "source": "train_003482",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0043",
+  "split": "train",
+  "source": "train_004292",
+  "semitones": -4,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0044",
+  "split": "train",
+  "source": "train_001066",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0045",
+  "split": "train",
+  "source": "train_006983",
+  "semitones": -2,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0046",
+  "split": "train",
+  "source": "train_003908",
+  "semitones": 7,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0047",
+  "split": "train",
+  "source": "train_002420",
+  "semitones": -1,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0048",
+  "split": "train",
+  "source": "train_006430",
+  "semitones": 1,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0049",
+  "split": "train",
+  "source": "train_006620",
+  "semitones": -3,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0050",
+  "split": "train",
+  "source": "train_005001",
+  "semitones": 2,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0051",
+  "split": "train",
+  "source": "train_000841",
+  "semitones": -4,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0052",
+  "split": "train",
+  "source": "train_005947",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0053",
+  "split": "train",
+  "source": "train_003355",
+  "semitones": 7,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0054",
+  "split": "train",
+  "source": "train_008539",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0055",
+  "split": "train",
+  "source": "train_006675",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0056",
+  "split": "train",
+  "source": "train_007074",
+  "semitones": -4,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0057",
+  "split": "train",
+  "source": "train_009593",
+  "semitones": 5,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0058",
+  "split": "train",
+  "source": "train_003699",
+  "semitones": -4,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0059",
+  "split": "train",
+  "source": "train_008956",
+  "semitones": -1,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0060",
+  "split": "train",
+  "source": "train_006588",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0061",
+  "split": "train",
+  "source": "train_001880",
+  "semitones": 7,
+  "meter": "2/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0062",
+  "split": "train",
+  "source": "train_007174",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0063",
+  "split": "train",
+  "source": "train_004905",
+  "semitones": 6,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0064",
+  "split": "train",
+  "source": "train_001882",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0065",
+  "split": "train",
+  "source": "train_009512",
+  "semitones": -1,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0066",
+  "split": "train",
+  "source": "train_001728",
+  "semitones": 5,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0067",
+  "split": "train",
+  "source": "train_005190",
+  "semitones": 5,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0068",
+  "split": "train",
+  "source": "train_000450",
+  "semitones": 6,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0069",
+  "split": "train",
+  "source": "train_003886",
+  "semitones": -5,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0070",
+  "split": "train",
+  "source": "train_007803",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0071",
+  "split": "train",
+  "source": "train_005434",
+  "semitones": 7,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0072",
+  "split": "train",
+  "source": "train_003179",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0073",
+  "split": "train",
+  "source": "train_004202",
+  "semitones": 6,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0074",
+  "split": "train",
+  "source": "train_000835",
+  "semitones": -5,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0075",
+  "split": "train",
+  "source": "train_008569",
+  "semitones": -6,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0076",
+  "split": "train",
+  "source": "train_006017",
+  "semitones": -7,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0077",
+  "split": "train",
+  "source": "train_007455",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0078",
+  "split": "train",
+  "source": "train_001104",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0079",
+  "split": "train",
+  "source": "train_002909",
+  "semitones": -6,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0080",
+  "split": "train",
+  "source": "train_005744",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0081",
+  "split": "train",
+  "source": "train_005814",
+  "semitones": 2,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0082",
+  "split": "train",
+  "source": "train_001465",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0083",
+  "split": "train",
+  "source": "train_009227",
+  "semitones": 1,
+  "meter": "2/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0084",
+  "split": "train",
+  "source": "train_009389",
+  "semitones": 7,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0085",
+  "split": "train",
+  "source": "train_008187",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0086",
+  "split": "train",
+  "source": "train_009049",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0087",
+  "split": "train",
+  "source": "train_001967",
+  "semitones": 6,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0088",
+  "split": "train",
+  "source": "train_007530",
+  "semitones": -3,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0089",
+  "split": "train",
+  "source": "train_005268",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0090",
+  "split": "train",
+  "source": "train_003682",
+  "semitones": -6,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0091",
+  "split": "train",
+  "source": "train_005801",
+  "semitones": 6,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0092",
+  "split": "train",
+  "source": "train_007854",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0093",
+  "split": "train",
+  "source": "train_000409",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0094",
+  "split": "train",
+  "source": "train_005107",
+  "semitones": 1,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0095",
+  "split": "train",
+  "source": "train_008960",
+  "semitones": -3,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0096",
+  "split": "train",
+  "source": "train_005089",
+  "semitones": -4,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0097",
+  "split": "train",
+  "source": "train_004997",
+  "semitones": -3,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0098",
+  "split": "train",
+  "source": "train_009574",
+  "semitones": -7,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0099",
+  "split": "train",
+  "source": "train_008078",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0100",
+  "split": "train",
+  "source": "train_004915",
+  "semitones": -5,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0101",
+  "split": "train",
+  "source": "train_004610",
+  "semitones": 4,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0102",
+  "split": "train",
+  "source": "train_004295",
+  "semitones": -7,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0103",
+  "split": "train",
+  "source": "train_006785",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 16
+ },
+ {
+  "id": "train_tr0104",
+  "split": "train",
+  "source": "train_008778",
+  "semitones": -6,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0105",
+  "split": "train",
+  "source": "train_001990",
+  "semitones": 2,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0106",
+  "split": "train",
+  "source": "train_005861",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0107",
+  "split": "train",
+  "source": "train_006064",
+  "semitones": -3,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0108",
+  "split": "train",
+  "source": "train_008984",
+  "semitones": -7,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0109",
+  "split": "train",
+  "source": "train_009534",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "train_tr0110",
+  "split": "train",
+  "source": "train_001393",
+  "semitones": -6,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0111",
+  "split": "train",
+  "source": "train_000576",
+  "semitones": -1,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0112",
+  "split": "train",
+  "source": "train_005461",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0113",
+  "split": "train",
+  "source": "train_005485",
+  "semitones": 5,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0114",
+  "split": "train",
+  "source": "train_006561",
+  "semitones": -3,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 14
+ },
+ {
+  "id": "train_tr0115",
+  "split": "train",
+  "source": "train_006403",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0116",
+  "split": "train",
+  "source": "train_003259",
+  "semitones": -1,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0117",
+  "split": "train",
+  "source": "train_003528",
+  "semitones": -2,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0118",
+  "split": "train",
+  "source": "train_000045",
+  "semitones": 7,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "train_tr0119",
+  "split": "train",
+  "source": "train_004050",
+  "semitones": -2,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "train_tr0120",
+  "split": "train",
+  "source": "train_007202",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 12
+ },
+ {
+  "id": "val_tr0001",
+  "split": "val",
+  "source": "val_000623",
+  "semitones": -3,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0002",
+  "split": "val",
+  "source": "val_000789",
+  "semitones": -1,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0003",
+  "split": "val",
+  "source": "val_000125",
+  "semitones": -7,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0004",
+  "split": "val",
+  "source": "val_001057",
+  "semitones": 7,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "val_tr0005",
+  "split": "val",
+  "source": "val_000297",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0006",
+  "split": "val",
+  "source": "val_000921",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 16
+ },
+ {
+  "id": "val_tr0007",
+  "split": "val",
+  "source": "val_000367",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "val_tr0008",
+  "split": "val",
+  "source": "val_000117",
+  "semitones": -5,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0009",
+  "split": "val",
+  "source": "val_001197",
+  "semitones": 5,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "val_tr0010",
+  "split": "val",
+  "source": "val_000854",
+  "semitones": -3,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "val_tr0011",
+  "split": "val",
+  "source": "val_000779",
+  "semitones": 3,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0012",
+  "split": "val",
+  "source": "val_001156",
+  "semitones": -2,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 16
+ },
+ {
+  "id": "val_tr0013",
+  "split": "val",
+  "source": "val_000173",
+  "semitones": -6,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0014",
+  "split": "val",
+  "source": "val_000657",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0015",
+  "split": "val",
+  "source": "val_000704",
+  "semitones": 1,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0016",
+  "split": "val",
+  "source": "val_000867",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0017",
+  "split": "val",
+  "source": "val_000750",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0018",
+  "split": "val",
+  "source": "val_000379",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "val_tr0019",
+  "split": "val",
+  "source": "val_000461",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "val_tr0020",
+  "split": "val",
+  "source": "val_000104",
+  "semitones": 6,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0001",
+  "split": "test",
+  "source": "test_001040",
+  "semitones": 1,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0002",
+  "split": "test",
+  "source": "test_000912",
+  "semitones": -1,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0003",
+  "split": "test",
+  "source": "test_000143",
+  "semitones": 4,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0004",
+  "split": "test",
+  "source": "test_000844",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0005",
+  "split": "test",
+  "source": "test_000514",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0006",
+  "split": "test",
+  "source": "test_000092",
+  "semitones": 1,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0007",
+  "split": "test",
+  "source": "test_000031",
+  "semitones": 4,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0008",
+  "split": "test",
+  "source": "test_000043",
+  "semitones": -3,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0009",
+  "split": "test",
+  "source": "test_000728",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0010",
+  "split": "test",
+  "source": "test_000859",
+  "semitones": 1,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0011",
+  "split": "test",
+  "source": "test_000398",
+  "semitones": -3,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0012",
+  "split": "test",
+  "source": "test_000533",
+  "semitones": -5,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0013",
+  "split": "test",
+  "source": "test_001185",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0014",
+  "split": "test",
+  "source": "test_000908",
+  "semitones": 6,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0015",
+  "split": "test",
+  "source": "test_000721",
+  "semitones": 1,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0016",
+  "split": "test",
+  "source": "test_001096",
+  "semitones": -6,
+  "meter": "2/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0017",
+  "split": "test",
+  "source": "test_000545",
+  "semitones": -6,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0018",
+  "split": "test",
+  "source": "test_000826",
+  "semitones": 7,
+  "meter": "2/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0019",
+  "split": "test",
+  "source": "test_001173",
+  "semitones": -1,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0020",
+  "split": "test",
+  "source": "test_001178",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0021",
+  "split": "test",
+  "source": "test_000204",
+  "semitones": -3,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0022",
+  "split": "test",
+  "source": "test_000011",
+  "semitones": 7,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0023",
+  "split": "test",
+  "source": "test_000774",
+  "semitones": -7,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0024",
+  "split": "test",
+  "source": "test_001052",
+  "semitones": -5,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0025",
+  "split": "test",
+  "source": "test_000598",
+  "semitones": -2,
+  "meter": "3/4",
+  "tempo_bpm": 72,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0026",
+  "split": "test",
+  "source": "test_001099",
+  "semitones": 7,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0027",
+  "split": "test",
+  "source": "test_000462",
+  "semitones": 6,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0028",
+  "split": "test",
+  "source": "test_000248",
+  "semitones": -2,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0029",
+  "split": "test",
+  "source": "test_000700",
+  "semitones": -6,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0030",
+  "split": "test",
+  "source": "test_000604",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0031",
+  "split": "test",
+  "source": "test_000609",
+  "semitones": -7,
+  "meter": "2/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0032",
+  "split": "test",
+  "source": "test_000929",
+  "semitones": -3,
+  "meter": "4/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0033",
+  "split": "test",
+  "source": "test_001195",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0034",
+  "split": "test",
+  "source": "test_000623",
+  "semitones": -4,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0035",
+  "split": "test",
+  "source": "test_000551",
+  "semitones": -6,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0036",
+  "split": "test",
+  "source": "test_000689",
+  "semitones": 7,
+  "meter": "3/4",
+  "tempo_bpm": 90,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0037",
+  "split": "test",
+  "source": "test_000666",
+  "semitones": 4,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0038",
+  "split": "test",
+  "source": "test_001058",
+  "semitones": 6,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0039",
+  "split": "test",
+  "source": "test_000434",
+  "semitones": -7,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0040",
+  "split": "test",
+  "source": "test_000985",
+  "semitones": 4,
+  "meter": "2/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0041",
+  "split": "test",
+  "source": "test_000490",
+  "semitones": -5,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0042",
+  "split": "test",
+  "source": "test_001051",
+  "semitones": -1,
+  "meter": "3/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0043",
+  "split": "test",
+  "source": "test_001141",
+  "semitones": 2,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0044",
+  "split": "test",
+  "source": "test_000203",
+  "semitones": 2,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0045",
+  "split": "test",
+  "source": "test_000470",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0046",
+  "split": "test",
+  "source": "test_000476",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0047",
+  "split": "test",
+  "source": "test_000453",
+  "semitones": 2,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0048",
+  "split": "test",
+  "source": "test_000083",
+  "semitones": 3,
+  "meter": "3/4",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0049",
+  "split": "test",
+  "source": "test_000966",
+  "semitones": -7,
+  "meter": "4/4",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0050",
+  "split": "test",
+  "source": "test_000321",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0051",
+  "split": "test",
+  "source": "test_001074",
+  "semitones": 3,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0052",
+  "split": "test",
+  "source": "test_000812",
+  "semitones": 3,
+  "meter": "2/4",
+  "tempo_bpm": 72,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0053",
+  "split": "test",
+  "source": "test_000907",
+  "semitones": 3,
+  "meter": "6/8",
+  "tempo_bpm": 108,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0054",
+  "split": "test",
+  "source": "test_000430",
+  "semitones": -6,
+  "meter": "3/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0055",
+  "split": "test",
+  "source": "test_000670",
+  "semitones": -2,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0056",
+  "split": "test",
+  "source": "test_000247",
+  "semitones": 6,
+  "meter": "4/4",
+  "tempo_bpm": 108,
+  "n_notes": 10
+ },
+ {
+  "id": "test_tr0057",
+  "split": "test",
+  "source": "test_001151",
+  "semitones": -5,
+  "meter": "4/4",
+  "tempo_bpm": 90,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0058",
+  "split": "test",
+  "source": "test_001123",
+  "semitones": 5,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 8
+ },
+ {
+  "id": "test_tr0059",
+  "split": "test",
+  "source": "test_000632",
+  "semitones": -4,
+  "meter": "6/8",
+  "tempo_bpm": 144,
+  "n_notes": 12
+ },
+ {
+  "id": "test_tr0060",
+  "split": "test",
+  "source": "test_001004",
+  "semitones": -1,
+  "meter": "2/4",
+  "tempo_bpm": 120,
+  "n_notes": 8
+ }
+]

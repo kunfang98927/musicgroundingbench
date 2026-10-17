@@ -115,28 +115,45 @@ per-clip metadata.
 * **`test-full`** contains every question on the test clips (3N: 10,478, 2B grounding: 3,381,
   2B understanding: 4,928); `test` is a subset of it.
 
-Protocol (Section 4 of the paper):
+The scoring code is in [`evaluation/`](evaluation/README.md) (Section 4 of the paper):
 
-* **Grounding.** Predicted and reference answers are sets of time intervals. We report the
-  instruction-following rate (IFR), MergedIoU (IoU of the regions covered after merging
-  overlapping spans), and span-level precision, recall, and F1 under greedy one-to-one
-  matching at IoU ≥ 0.5 and ≥ 0.7, together with the onset/offset mean absolute error (ms) of
-  matched spans. For free-form model outputs, spans are extracted with Qwen2.5-7B-Instruct.
-* **Understanding.** Qwen2.5-7B-Instruct judges each answer for instruction following and
-  semantic correctness. We report IFR and accuracy over all test questions, overall and per
-  concept.
+```bash
+pip install -r requirements.txt
+# grounding: time spans are read from answers of the form "From X seconds to Y seconds"
+python -m evaluation.grounding --qa MGBench-2B/qa/grounding/test.json --pred preds.json
+# understanding: Qwen2.5-7B-Instruct judges every answer (needs a GPU), then the metrics
+python -m evaluation.judge --qa MGBench-2B/qa/understanding/test.json --pred preds.json --out judged.json
+python -m evaluation.understanding --qa MGBench-2B/qa/understanding/test.json --judged judged.json
+```
 
-Reference evaluation scripts will be added to this repository.
+* **Grounding**: instruction-following rate (IFR), MergedIoU (IoU of the regions covered after
+  merging overlapping spans), span-level precision, recall, and F1 under greedy one-to-one
+  matching at IoU ≥ 0.5 and ≥ 0.7, and the onset/offset mean absolute error (ms) of matched spans.
+* **Understanding**: IFR and accuracy over all test questions, overall and per music concept.
+
+[`evaluation/README.md`](evaluation/README.md) describes the prediction format and every metric.
 
 ## Repository contents
 
+* `evaluation/` — scoring code for grounding and understanding answers.
+* `mgbench_2b/`, `mgbench_3n/` — generation of the clips' MIDI (and the 200 transposed
+  MusicGroundingBench-2B clips, in `mgbench_2b/reference/transposed/`).
+* `mgbench_qa/` — construction of the question–answer pairs from the MIDI files (rule-based answer
+  oracles, question families, balanced selection) and the release checks.
 * `docs/` — the demo page (served with GitHub Pages).
-* `mgbench_3n/`, `mgbench_2b/` — generation of the clips' MIDI.
-* `mgbench_v2/` — construction and validation of the released question–answer pairs: the
-  rule-based answer oracles, question templates, and validation gates.
 
-Audio rendering (Pianoteq 9 Stage) is commercial software and not part of this repository. A
-step-by-step reproduction guide will be added.
+## Reproducing the dataset
+
+The released question–answer files can be rebuilt from scratch, without audio, and checked byte
+for byte against the release:
+
+```bash
+pip install -r requirements.txt
+./reproduce.sh work
+```
+
+[`REPRODUCING.md`](REPRODUCING.md) explains every step. Audio rendering (Pianoteq 9 Stage) is
+commercial software and not part of this repository; the rendered audio is on Zenodo.
 
 ## License
 

@@ -1,0 +1,28 @@
+{
+ "sample_id": "train_tr0001",
+ "split": "train",
+ "filename": "train_tr0001.mid",
+ "source_sample_id": "train_007887",
+ "basic_info": {
+  "num_bars": 2,
+  "num_notes": 8,
+  "time_signature": "2/4",
+  "beats_per_bar": 2,
+  "beat_unit": 4,
+  "meter_class": "simple_duple",
+  "tempo_bpm": 120,
+  "tempo_class": "medium",
+  "bar_duration_sec": 1.0,
+  "clip_duration_sec": 2.8568181818181815,
+  "leading_silence_sec": 0.8874416469453732,
+  "music_start_sec": 0.8874416469453732,
+  "music_end_sec": 2.8568181818181815,
+  "subdivision_type": "eighth"
+ },
+ "construction": {
+  "kind": "true_transposition",
+  "semitones": -2,
+  "bar2_time_offset_sec": 1.0,
+  "source_bar": 1
+ }
+}

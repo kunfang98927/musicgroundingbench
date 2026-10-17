@@ -1,0 +1,28 @@
+{
+ "sample_id": "val_tr0012",
+ "split": "val",
+ "filename": "val_tr0012.mid",
+ "source_sample_id": "val_001156",
+ "basic_info": {
+  "num_bars": 2,
+  "num_notes": 16,
+  "time_signature": "4/4",
+  "beats_per_bar": 4,
+  "beat_unit": 4,
+  "meter_class": "simple_quadruple",
+  "tempo_bpm": 90,
+  "tempo_class": "medium",
+  "bar_duration_sec": 2.6666666666666665,
+  "clip_duration_sec": 5.922727272727273,
+  "leading_silence_sec": 0.6181789718011339,
+  "music_start_sec": 0.6181789718011339,
+  "music_end_sec": 5.922727272727273,
+  "subdivision_type": "eighth"
+ },
+ "construction": {
+  "kind": "true_transposition",
+  "semitones": -2,
+  "bar2_time_offset_sec": 2.6666666666666665,
+  "source_bar": 1
+ }
+}

@@ -6,10 +6,10 @@ src/validation.py until one passes, then humanized (small timing/velocity
 jitter) and written out as a <sample_id>.mid + <sample_id>.json pair.
 
 With the same --seed, this produces byte-identical MIDI and metadata to any
-other run - see docs/REPRODUCING.md.
+other run - see REPRODUCING.md in the repository root.
 
 Usage:
-    python scripts/01_generate_midi.py --outdir two_bar_dataset --target 11300
+    python scripts/01_generate_midi.py --outdir two_bar_dataset --target 12000 --seed 1024   # the release
 """
 
 import argparse

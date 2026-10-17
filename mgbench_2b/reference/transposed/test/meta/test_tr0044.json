@@ -1,0 +1,28 @@
+{
+ "sample_id": "test_tr0044",
+ "split": "test",
+ "filename": "test_tr0044.mid",
+ "source_sample_id": "test_000203",
+ "basic_info": {
+  "num_bars": 2,
+  "num_notes": 10,
+  "time_signature": "4/4",
+  "beats_per_bar": 4,
+  "beat_unit": 4,
+  "meter_class": "simple_quadruple",
+  "tempo_bpm": 72,
+  "tempo_class": "slow",
+  "bar_duration_sec": 3.3333333333333335,
+  "clip_duration_sec": 6.8590909090909085,
+  "leading_silence_sec": 0.2352519306126908,
+  "music_start_sec": 0.2352519306126908,
+  "music_end_sec": 6.8590909090909085,
+  "subdivision_type": "eighth"
+ },
+ "construction": {
+  "kind": "true_transposition",
+  "semitones": 2,
+  "bar2_time_offset_sec": 3.3333333333333335,
+  "source_bar": 1
+ }
+}
